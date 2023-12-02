@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(17, 16, 16);
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Shadows Into Light';
+    color: white;
+}
+button {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(23, 23, 51);
+    border: 2px solid white;
+    border-radius: 10%;
+    transform: translateX(-50%);
+    font: 24px white;
+    box-shadow: 0 0 30px black;
+    font-family: 'Shadows Into Light';
+}
+.Youtube {
+    position: absolute;
+    left: 50%;
+}
+.Twitter {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+}
+.Instagram {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.TikTok {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+button:hover {
+    width: 200px;
+    height: 120px;
+    transition: .5s;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 35%;
+}
+.Youtube:hover {
+    background-color: tomato;
+    color: white;
+    font-size: 36px;
+
+}
+.Twitter:hover {
+    background-color: rgb(23, 156, 240);
+    color: white;
+    font-size: 36px;
+    
+}
+.Instagram:hover {
+    background-color: #DD2A7B;
+    transition: .5s;
+    font-size: 36px;
+}
+.TikTok:hover {
+    background-color: black;
+    color: white;
+    font-size: 36px;
+}
+footer {
+    position: relative;
+    top: 780px;
+    font-size: 16px;
+    color: white;
+}
+.TikTok:hover::before {
+    content: 'Tik';
+    color: lightblue;
+}
+.TikTok:hover::after {
+    content: 'Tok';
+    color: tomato;
+}
+.text {
+    display:none;
+}
+.Instagram:hover::before {
+    content: 'Instagram'
+}
+.Youtube:hover::before {
+    content: 'Youtube';
+}
+.Twitter:hover::before {
+    content: 'Twitter';
+}
+.Youtube:hover + .Instagram {
+    width: 200px;
+    height: 120px;
+}
+
+
+
